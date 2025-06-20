@@ -26,14 +26,14 @@
 <body>
 
   <h1>Случайная картинка</h1>
-  <img id="randImg" src="https://loremflickr.com/600/400" alt="Картинка">
+  <img id="randImg" src="https://loremflickr.com/600/400/abstract?random=1" alt="Картинка">
   <br>
   <button onclick="newImage()">Показать другую</button>
 
   <script>
     function newImage() {
-      const timestamp = Date.now();
-      document.getElementById('randImg').src = `https://loremflickr.com/600/400?lock=${timestamp}`;
+      const ts = Date.now();
+      document.getElementById('randImg').src = `https://loremflickr.com/600/400/abstract?random=${ts}`;
     }
   </script>
 
